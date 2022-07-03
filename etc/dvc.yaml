@@ -1,0 +1,8 @@
+stages:
+  disambig_const:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 10.01-disambig_constiutents.ipynb
+    deps:
+    - ../data/di-morphosyntax.csv
+    - 10.01-disambig_constiutents.ipynb
+    outs:
+    - ../data/disambig_mr.csv
