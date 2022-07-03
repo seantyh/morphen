@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  disambig_const:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 10.01-disambig_constiutents.ipynb
+    deps:
+    - path: ../data/di-morphosyntax.csv
+      md5: 7f201d9b806798b4622cb0b0d24ac6db
+      size: 14445953
+    - path: 10.01-disambig_constiutents.ipynb
+      md5: 28c8fab542a794d71077c8c647b59f36
+      size: 9957
+    outs:
+    - path: ../data/disambig_mr.csv
+      md5: f6821533032b90e6979d57413e367c47
+      size: 187581
