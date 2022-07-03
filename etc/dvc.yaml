@@ -6,3 +6,10 @@ stages:
     - 10.01-disambig_constiutents.ipynb
     outs:
     - ../data/disambig_mr.csv
+  train_alpha:
+    cmd: nbconvert --to notebook --execute --inplace 10.02-classify-mr.ipynb
+    deps:
+    - ../data/di-morphosyntax.csv
+    - 10.02-classify-mr.ipynb
+    outs:
+    - ../data/models/morphen-alpha-220703-0805/
