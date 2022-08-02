@@ -27,3 +27,16 @@ stages:
       md5: 6bf309b489dd54c02b20ff9316a35073.dir
       size: 409154944
       nfiles: 2
+  tencent-extract:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 10.10-tencent-extract.ipynb
+    deps:
+    - path: ../data/di-morphosyntax.csv
+      md5: 7f201d9b806798b4622cb0b0d24ac6db
+      size: 14445953
+    outs:
+    - path: ../data/verb_morpho.csv
+      md5: 2f2262abdbb1e31ed47e0ec613c243dc
+      size: 77170
+    - path: ../data/verb_morpho_emb.txt
+      md5: e82aa92700537fb0615d1dbdf38aecd9
+      size: 2595275

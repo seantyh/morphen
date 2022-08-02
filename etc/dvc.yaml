@@ -13,3 +13,11 @@ stages:
     - 10.02-classify-mr.ipynb
     outs:
     - ../data/models/morphen-alpha-220703-0805/
+  tencent-extract:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 10.10-tencent-extract.ipynb
+    deps:
+    - ../data/di-morphosyntax.csv    
+    outs:
+    - ../data/verb_morpho.csv
+    - ../data/verb_morpho_emb.txt
+    

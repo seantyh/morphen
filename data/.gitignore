@@ -1,2 +1,5 @@
+/tencent-ailab-embedding-zh-d200-v0.2.0-s.tar.gz
 /di-morphosyntax.csv
 /disambig_mr.csv
+/verb_morpho.csv
+/verb_morpho_emb.txt
