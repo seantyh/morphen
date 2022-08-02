@@ -9,10 +9,10 @@ stages:
   train_alpha:
     cmd: nbconvert --to notebook --execute --inplace 10.02-classify-mr.ipynb
     deps:
-    - ../data/di-morphosyntax.csv
-    - 10.02-classify-mr.ipynb
+    - ../data/di-morphosyntax.csv    
     outs:
-    - ../data/models/morphen-alpha-220703-0805/
+    - ../data/models/morphen-alpha-220802-0840/
+    - ../data/10.02-word-split.json
   tencent-extract:
     cmd: jupyter nbconvert --to notebook --execute --inplace 10.10-tencent-extract.ipynb
     deps:
