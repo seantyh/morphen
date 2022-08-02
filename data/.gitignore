@@ -5,3 +5,7 @@
 /verb_morpho_emb.txt
 /10.02-word-split.json
 /tencent-mr-lda.joblib
+/tencent-mr-lda-char.split.json
+/tencent-mr-lda-char.joblib
+/tencent-mr-lda-word.split.json
+/tencent-mr-lda-word.joblib
