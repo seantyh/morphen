@@ -19,11 +19,11 @@ stages:
     - path: ../data/di-morphosyntax.csv
       md5: 7f201d9b806798b4622cb0b0d24ac6db
       size: 14445953
-    - path: 10.02-classify-mr.ipynb
-      md5: 0fce83ad32d2938eb90459fafd09e00a
-      size: 72181
     outs:
-    - path: ../data/models/morphen-alpha-220703-0805/
+    - path: ../data/10.02-word-split.json
+      md5: e62d8ebf8041a8b1dfe5ad4114594a2d
+      size: 26837
+    - path: ../data/models/morphen-alpha-220802-0840/
       md5: 6bf309b489dd54c02b20ff9316a35073.dir
       size: 409154944
       nfiles: 2
