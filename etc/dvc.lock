@@ -40,3 +40,19 @@ stages:
     - path: ../data/verb_morpho_emb.txt
       md5: e82aa92700537fb0615d1dbdf38aecd9
       size: 2595275
+  tencent-lda:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 10.12-tencent-lda.ipynb
+    deps:
+    - path: ../data/10.02-word-split.json
+      md5: e62d8ebf8041a8b1dfe5ad4114594a2d
+      size: 26837
+    - path: ../data/verb_morpho.csv
+      md5: 2f2262abdbb1e31ed47e0ec613c243dc
+      size: 77170
+    - path: ../data/verb_morpho_emb.txt
+      md5: e82aa92700537fb0615d1dbdf38aecd9
+      size: 2595275
+    outs:
+    - path: ../data/tencent-mr-lda.joblib
+      md5: 7f72289b6c88168faa0655b464802a7c
+      size: 39380

@@ -20,4 +20,12 @@ stages:
     outs:
     - ../data/verb_morpho.csv
     - ../data/verb_morpho_emb.txt
+  tencent-lda:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 10.12-tencent-lda.ipynb
+    deps:
+    - ../data/verb_morpho.csv
+    - ../data/verb_morpho_emb.txt
+    - ../data/10.02-word-split.json
+    outs:
+    - ../data/tencent-mr-lda.joblib
     
