@@ -94,3 +94,9 @@ stages:
     - path: ../data/tencent-mr-lda-word.split.json
       md5: bf62aa25c5de57eec909f16508d2b2a0
       size: 17029
+  tencent-extract-500k:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 10.10.1-tencent-extract-500k.ipynb
+    outs:
+    - path: ../data/tencent_d200_500k.bin
+      md5: 99774c1ce0b7fe992da276920162f9aa
+      size: 405501234

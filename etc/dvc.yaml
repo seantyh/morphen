@@ -20,6 +20,10 @@ stages:
     outs:
     - ../data/verb_morpho.csv
     - ../data/verb_morpho_emb.txt
+  tencent-extract-500k:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 10.10.1-tencent-extract-500k.ipynb    
+    outs:
+    - ../data/tencent_d200_500k.bin  
   tencent-lda-char:
     cmd: jupyter nbconvert --to notebook --execute --inplace 10.12-tencent-lda-char.ipynb
     deps:
