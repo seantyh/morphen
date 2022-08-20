@@ -42,4 +42,8 @@ stages:
     outs:
     - ../data/tencent-mr-lda-word.split.json
     - ../data/tencent-mr-lda-word.joblib
+  tencent-delta:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 20.01-decompo-vec.ipynb
+    outs:
+    - ../data/delta_tenc_d200_biwords.bin    
 

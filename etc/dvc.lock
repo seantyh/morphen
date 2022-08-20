@@ -98,5 +98,11 @@ stages:
     cmd: jupyter nbconvert --to notebook --execute --inplace 10.10.1-tencent-extract-500k.ipynb
     outs:
     - path: ../data/tencent_d200_500k.bin
-      md5: 99774c1ce0b7fe992da276920162f9aa
-      size: 405501234
+      md5: 4aae4ab37e3f8d124651cfdd7aa664f5
+      size: 405500421
+  tencent-delta:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 20.01-decompo-vec.ipynb
+    outs:
+    - path: ../data/delta_tenc_d200_biwords.bin
+      md5: 214c0ded6ad287e743e4def43a3e3995
+      size: 706461140
