@@ -104,5 +104,5 @@ stages:
     cmd: jupyter nbconvert --to notebook --execute --inplace 20.01-decompo-vec.ipynb
     outs:
     - path: ../data/delta_tenc_d200_biwords.bin
-      md5: 214c0ded6ad287e743e4def43a3e3995
-      size: 706461140
+      md5: cbd64950bbdc4741515321507541f794
+      size: 706406955
