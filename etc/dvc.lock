@@ -122,3 +122,6 @@ stages:
     - path: ../data/models/lda_mr_c1c2.joblib
       md5: d3f1fff5cdcc3fad5840db6c427d6042
       size: 39380
+    - path: ../data/models/lda_mr_scaler.joblib
+      md5: 436ed2787cfbbc4c815e7af00b2dc8f0
+      size: 8572
