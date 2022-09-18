@@ -119,3 +119,6 @@ stages:
       md5: c2dd548b50fddbfcd483066021b00b9a.dir
       size: 410379804
       nfiles: 2
+    - path: ../data/models/lda_mr_c1c2.joblib
+      md5: d3f1fff5cdcc3fad5840db6c427d6042
+      size: 39380

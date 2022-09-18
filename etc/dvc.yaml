@@ -51,5 +51,6 @@ stages:
     outs:
     - ../data/eps_bert_train.joblib
     - ../data/eps_bert_test.joblib
+    - ../data/models/lda_mr_c1c2.joblib
     - ../data/models/eps_bert_220918/
 
