@@ -106,3 +106,16 @@ stages:
     - path: ../data/delta_tenc_d200_biwords.bin
       md5: cbd64950bbdc4741515321507541f794
       size: 706406955
+  eps-bert:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 21.11-delta-machine-bert.ipynb
+    outs:
+    - path: ../data/eps_bert_test.joblib
+      md5: 723926f5470ba5991dd1d7470992efd9
+      size: 1018596
+    - path: ../data/eps_bert_train.joblib
+      md5: 6de6da6ac14eef3639ce0ac37b70cdb2
+      size: 4154198
+    - path: ../data/models/eps_bert_220918/
+      md5: c2dd548b50fddbfcd483066021b00b9a.dir
+      size: 410379804
+      nfiles: 2

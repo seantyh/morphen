@@ -45,5 +45,11 @@ stages:
   tencent-delta:
     cmd: jupyter nbconvert --to notebook --execute --inplace 20.01-decompo-vec.ipynb
     outs:
-    - ../data/delta_tenc_d200_biwords.bin    
+    - ../data/delta_tenc_d200_biwords.bin 
+  eps-bert:
+    cmd: jupyter nbconvert --to notebook --execute --inplace 21.11-delta-machine-bert.ipynb
+    outs:
+    - ../data/eps_bert_train.joblib
+    - ../data/eps_bert_test.joblib
+    - ../data/models/eps_bert_220918/
 

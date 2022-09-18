@@ -11,3 +11,5 @@
 /tencent-mr-lda-word.joblib
 /tencent_d200_500k.bin
 /delta_tenc_d200_biwords.bin
+/eps_bert_train.joblib
+/eps_bert_test.joblib
