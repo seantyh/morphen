@@ -41,6 +41,30 @@ def feature_extraction(feat_type, entries, kv):
    
     return Xvecs, ylabels
 
+def feature_extraction_with_key(feat_type, entries, kv):
+    Xvecs = []
+    ylabels = []
+    key_list = []
+    for entry_x in entries:
+        token = entry_x["token_key"]
+        try:
+            if "+" not in feat_type:
+                vec = get_delta_vec(feat_type, token, kv)
+            else:
+                feats = [x.strip() for x in feat_type.strip().split("+")]
+                vec = np.concatenate([get_delta_vec(feats[0], token, kv), 
+                                      get_delta_vec(feats[1], token, kv)], axis=0)
+        except Exception as ex:                        
+            continue
+        Xvecs.append(vec)
+        ylabels.append(entry_x["MorphoSyntax"])
+        key_list.append(token)
+    Xvecs = np.vstack(Xvecs)
+    ylabels = np.array(ylabels)
+    assert Xvecs.shape[0] == len(ylabels)
+   
+    return Xvecs, key_list, ylabels
+
 def estimate_lda(feat_type, clf_entries, kv, kf_seed=12345):
     kf = KFold(n_splits=5, shuffle=True, random_state=kf_seed)       
     Xvecs, ylabels = feature_extraction(feat_type, clf_entries, kv)
